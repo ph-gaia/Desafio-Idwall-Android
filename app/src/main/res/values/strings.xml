@@ -1,3 +1,25 @@
 <resources>
-    <string name="app_name">desafioidwall</string>
+    <string name="app_name">Desafio Idwall</string>
+    <string name="label_title">The Iddog</string>
+    <string name="title_activity_feed">Feed Dogs</string>
+    <string name="label_sub_title">Para acessar, insira abaixo um e-mail válido</string>
+
+    <string name="hello">Olá</string>
+    <string name="wellcome">Seja bem vindo</string>
+    <string name="btn_log_in">Acessar</string>
+    <string name="hint_email_address">Digite seu e-mail</string>
+
+    <string name="field_empty">Campo obrigatório, insira um e-mail válido</string>
+    <string name="email_invalid">Ops...! E-mail inválido, tente novamente!</string>
+
+    <string name="btn_cancel">Cancelar</string>
+    <string name="btn_dismiss">Fechar</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_retry">Tente novamente</string>
+
+    <string name="loading_dog">Carregando imagem</string>
+    <string name="husky">Husky</string>
+    <string name="labrador">Labrador</string>
+    <string name="hound">Hound</string>
+    <string name="pug">Pug</string>
 </resources>
