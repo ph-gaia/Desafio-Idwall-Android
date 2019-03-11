@@ -3,9 +3,10 @@ package phenrique.idwall.desafioidwall.data.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class Feed {
+public class Feed implements Serializable {
 
     @SerializedName("category")
     @Expose
