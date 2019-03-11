@@ -16,7 +16,6 @@ import phenrique.idwall.desafioidwall.adapter.TabAdapter;
 import phenrique.idwall.desafioidwall.data.model.Feed;
 import phenrique.idwall.desafioidwall.mvp.signup.SignupActivity;
 import phenrique.idwall.desafioidwall.utils.AppPreference;
-import phenrique.idwall.desafioidwall.utils.Constants;
 
 import static phenrique.idwall.desafioidwall.utils.Constants.*;
 
@@ -43,6 +42,7 @@ public class FeedActivity extends AppCompatActivity implements TabLayout.OnTabSe
         setupViewPager();
 
         token = AppPreference.getTokenAuth(this);
+        presenter.requestDogs(category.get(0).toString(), token);
     }
 
     private void bindView() {
@@ -99,7 +99,7 @@ public class FeedActivity extends AppCompatActivity implements TabLayout.OnTabSe
     @Override
     public void populateRecyclerView(String category, final Feed list) {
         feedFragment = (FeedFragment) mViewPager.getAdapter().instantiateItem(mViewPager, mViewPager.getCurrentItem());
-        feedFragment.setAdapter(list.getList());
+        feedFragment.setAdapter(list, this.category.get(mViewPager.getCurrentItem()).toString());
     }
 
     @Override
@@ -107,4 +107,5 @@ public class FeedActivity extends AppCompatActivity implements TabLayout.OnTabSe
         startActivity(new Intent(this, SignupActivity.class));
         finish();
     }
+
 }
