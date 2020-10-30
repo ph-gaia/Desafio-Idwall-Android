@@ -25,5 +25,5 @@ Neste projeto utilizei a arquitetura MVP pela facilidade de manutenção e futur
 * [Picasso](https://github.com/square/picasso): Escolhi a biblioteca Picasso,  pois o carregamento de imagens sem complicações no aplicativo
 
 # Author
-- Paulo Henrique Gaia - phcgaia11@yahoo.com.br </br>
-(https://www.linkedin.com/in/paulo-henrique-c-gaia-338380b5/)
+- Paulo Henrique - phcgaia11@yahoo.com.br </br>
+(https://www.linkedin.com/in/ph-gaia/)
